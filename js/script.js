@@ -1,20 +1,20 @@
 function textAppear(){
-  var text = document.querySelector('#para1');
+  const text = document.querySelector('#para1');
 
-  var textPosition = text.getBoundingClientRect().top;
+  let textPosition = text.getBoundingClientRect().top;
 
-  var screenHeight = window.innerHeight;
+  let screenHeight = window.innerHeight;
 
   if(textPosition < (screenHeight-(screenHeight/4))){
     text.classList.add('appear');
   }
 }
 function textAppear2(){
-  var text = document.querySelector('#para2');
+  const text = document.querySelector('#para2');
 
-  var textPosition = text.getBoundingClientRect().top;
+  let textPosition = text.getBoundingClientRect().top;
 
-  var screenHeight = window.innerHeight;
+  let screenHeight = window.innerHeight;
 
   if(textPosition < (screenHeight-(screenHeight/4))){
     text.classList.add('appear2');
@@ -22,7 +22,7 @@ function textAppear2(){
 }
 
 function navbarAppear(){
-  
+  const nav = document.querySelector();
 }
 
 window.addEventListener('scroll', textAppear);
